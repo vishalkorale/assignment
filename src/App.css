@@ -1,38 +1,126 @@
-.App {
+body, html{
+background-color: #333;
+}
+.sidebar {
+  height: 100%;
+  width: 200px; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #7A96EA;
+  /* background: #e29999; */
+  padding-top: 20px;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow:hidden;
+  border: 7px solid rgb(79, 71, 96);
+  /* background:black; */
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
   text-align: center;
+  margin-top: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu-items {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu-item {
+  padding: 10px;
+  margin: 5px;
+  border-radius:8px ;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* border: 2px solid rgb(239, 236, 236); */
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu-item:hover {
+  background-color: #76663f;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #ffff;
+  padding: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  /* flex: 1; */
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-text {
+  margin-left: 200px;
+  font-weight: bold;
+  color: #ffcc00; 
+  font-size: 20px; 
+}
+
+.dropdown-menu {
+  position: relatives;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.datetime-dropdown input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  border: 2px solid black;
+  background: #e29999;
 }

@@ -1,0 +1,75 @@
+.employee-dashboard {
+    display: flex;
+    overflow-x: auto;
+    height: 200px;
+    margin-top: 0;
+    width: 890px;
+    margin-left: 209px;
+  }
+
+  .dashboard{
+    color: rgb(97, 92, 92);
+    margin-bottom: 1px;
+    margin-top: 3px;
+    margin-left: 210px;
+  }
+  
+  .container-wrapper {
+    display: flex;
+  }
+  
+  .container {
+    width: 250px;
+    height: 150px;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa; /* Light gray */
+  }
+  
+  .container h2 {
+    margin-bottom: 7px;
+    font-size: 20spx;
+    color: #333;
+    font-weight: 100px;
+     }
+
+
+     .number{
+        font-size: 30px;
+        
+     }
+  
+  .container p {
+    margin: 5px 0;
+    font: bolder;
+
+  }
+  
+  .container ul {
+    padding-left: 20px;
+  }
+  
+  .scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff; /* Blue */
+    color: #fff; /* White */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .scroll-arrow.prev {
+    left: 10px;
+  }
+  
+  .scroll-arrow.next {
+    right: 10px;
+  }
+  

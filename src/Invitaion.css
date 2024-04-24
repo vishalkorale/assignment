@@ -1,0 +1,79 @@
+.invitation {
+  display: flex;
+  align-items: center;
+  background-color: rgb(222, 90, 194);
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 211px;
+  height: 70px;
+  width: 790px;
+  margin-top: 10px;
+}
+
+.logo {
+  display: grid;
+   grid-template-rows: 30px ; 
+ /* flex-direction: column; */
+}
+.line {
+  border-left: 1px dotted black;
+  height: 100%; /* Make the line the same height as the container */
+  margin-left: 20px; /* Adjust the gap between the logo and the details */
+  margin-right: 150px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex: 1; /* Allow the details section to grow and take up remaining space */
+}
+
+.details > div {
+  flex: 1; /* Each div takes up equal space */
+  margin: 0 10px; /* Adjust the gap between the divs */
+  display: flex;
+  align-items: center;
+  row-gap: 6px;
+}
+
+.details div {
+  /* border: 2px solid black; */
+}
+
+.details p {
+  margin: 0; /* Remove default margins */
+}
+
+.details img {
+  margin-right: 5px; /* Adjust spacing between image and text */
+}
+
+.firstDiv{
+  width: 500px;
+  display: flex;
+  flex-direction:column;
+  margin-right: 200px;
+  float: left;
+}
+
+.secondDiv{
+  width:50px;
+  display: flex;
+  flex-direction:column;
+  
+}
+.entry-time {
+  width: 100px;
+}
+
+.float-left {
+  float: left;
+}
+
+.center {
+  margin: auto;
+}
+
+.float-right {
+  float: right;
+}
